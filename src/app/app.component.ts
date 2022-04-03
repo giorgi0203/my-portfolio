@@ -10,8 +10,12 @@ export class AppComponent {
   form;
   title = 'my-portfolio';
   constructor(fb: FormBuilder) {
-    this.form = fb.group({
-      test:new FormControl('')
+    this.form = fb.group<{
+      test: string,
+      bla?: boolean
+    }>({
+      test: new FormControl()
     })
+    this.form.value;
   }
 }
