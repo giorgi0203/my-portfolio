@@ -7,15 +7,9 @@ import { FormBuilder, FormControl, FormGroup, UntypedFormBuilder, UntypedFormGro
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  form;
+
   title = 'my-portfolio';
-  constructor(fb: FormBuilder) {
-    this.form = fb.group<{
-      test: string,
-      bla?: boolean
-    }>({
-      test: new FormControl()
-    })
-    this.form.value;
+  constructor() {
+
   }
 }
