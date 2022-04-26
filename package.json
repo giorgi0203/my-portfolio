@@ -14,7 +14,7 @@
     "@angular/common": "^14.0.0-next.8",
     "@angular/compiler": "^14.0.0-next.8",
     "@angular/core": "^14.0.0-next.8",
-    "@angular/forms": "https://dl.circleci.com/private/output/job/026a218d-c4d2-4bd9-8edd-43b5e199fdf7/artifacts/0/angular/forms-pr43834-17ce0ac4a6.tgz",
+    "@angular/forms": "14.0.0-next.8",
     "@angular/platform-browser": "^14.0.0-next.8",
     "@angular/platform-browser-dynamic": "^14.0.0-next.8",
     "@angular/router": "^14.0.0-next.8",
