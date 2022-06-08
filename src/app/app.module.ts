@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
+import { RedirectorComponent } from '@features/components/redirector/redirector.component';
 const config = {
   apiKey: "AIzaSyD_hgzN86-dWBsQ2Sb7QK7-t6DlXBnmlOs",
   authDomain: "my-portfolio-37dbf.firebaseapp.com",
@@ -16,10 +17,11 @@ const config = {
 }
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RedirectorComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     ReactiveFormsModule,
     AngularFireModule.initializeApp(config),
     AppRoutingModule
